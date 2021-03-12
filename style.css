@@ -1,0 +1,602 @@
+@import "./assets/fonts/stylesheet.css";
+@import "./assets/fonts/icomoon/style.css";
+
+body {
+    font-family: Cera Pro;
+    color: #222222;
+}
+
+.main-btn {
+    padding: 13px 0;
+    width: 240px;
+    text-align: center;
+    background-color: #77bcfe;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.disabled-btn {
+    padding: 13px 0;
+    width: 240px;
+    text-align: center;
+    background: #f7f8fc;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.disabled-btn:hover {
+    background-color: #77bcfe;
+    font-weight: 500;
+    color: white;
+}
+
+.main-menu__title {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.main-menu__subtitle {
+    line-height: 110%;
+    color: #405169;
+}
+
+/* organization-list */
+
+.main-menu__organization-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-menu__organization-item-wrapper {
+    margin-bottom: 10px;
+}
+
+.main-menu__organization-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 21px 7px 18px;
+    background: #f7f8fc;
+    width: 136px;
+    height: 136px;
+    border-radius: 7.55641px;
+}
+.main-menu__organization-item > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+}
+.main-menu__organization-item > div:first-child {
+    /* margin-top: auto; */
+    width: 127px;
+    height: 52px;
+}
+
+/* features */
+
+.main-menu__features {
+    background: #f7f8fc;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 130px 50px 140px;
+    border-radius: 15px;
+}
+.main-menu__features-login-banner {
+    padding-right: 35px;
+}
+
+.main-menu__features-login-banner-subtitle {
+    color: #405169;
+    font-weight: 500;
+    font-size: 18px;
+}
+.main-menu__features-login-banner-title {
+    color: #405169;
+    width: 428px;
+    font-size: 40px;
+    line-height: 120%;
+}
+.main-menu__features-login-banner-btn {
+    width: 240px;
+}
+
+.main-menu__features-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-menu__features-card {
+    padding: 34px 35px;
+    width: 310px;
+    height: 195px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+.main-menu__features-card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+.main-menu__features-card-body {
+    font-size: 14px;
+    line-height: 130%;
+    color: #7f8a95;
+}
+
+/* bid-panel */
+
+.main-menu__bid-panel {
+    background: #f7f8fc;
+    width: 1200px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.main-menu__bid-panel-container {
+    display: flex;
+    padding: 65px 0;
+}
+.main-menu__bid-panel-card-wrapper {
+    margin-left: 154px;
+}
+.main-menu__bid-panel-card-title {
+    font-size: 40px;
+    line-height: 110%;
+
+    color: #405169;
+}
+.main-menu__bid-panel-card-body {
+    width: 261px;
+    font-size: 16px;
+    line-height: 120%;
+    color: #001737;
+}
+
+.main-menu__bid-panel-card-second-logo {
+    bottom: 0;
+    right: 0;
+}
+
+/* main-menu__tariff-panel */
+
+.main-menu__tariff-panel-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.main-menu__tariff-panel-card-list {
+    width: 1333px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-menu__tariff-panel-card-wrapper {
+    margin-top: 40px;
+}
+.main-menu__tariff-panel-card-wrapper:nth-child(2) {
+    margin-top: 9px;
+}
+
+.main-menu__tariff-panel-card {
+    padding: 92px 53px 68px;
+    width: 350px;
+    height: 617px;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+}
+.main-menu__tariff-panel-card-header {
+    width: 169px;
+    height: 31px;
+
+    background: #77bcfe;
+    border-radius: 5px 5px 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: lowercase;
+    padding: 6px 27px;
+
+    color: #ffffff;
+}
+
+.main-menu__tariff-panel-card-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    color: #2c2c2c;
+}
+
+.main-menu__tariff-panel-card-price {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    color: #2e3640;
+}
+
+.main-menu__tariff-panel-card-price-subtitle {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #2e3640;
+}
+
+.main-menu__tariff-panel-card-advantage-list {
+}
+.main-menu__tariff-panel-card-advantage-item {
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+}
+.main-menu__tariff-panel-card-advantage-item_disabled {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+/* footer */
+
+footer {
+    /* box-sizing: border-box;
+    overflow: hidden; */
+    width: 100%;
+    padding: 79px 70px 36px;
+    background: #f3f4f9;
+}
+
+/* footer upper side */
+
+.main-menu__footer-upper-side {
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu__footer-upper-side-left-side-logo {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    /* or 20px */
+
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+.main-menu__footer-upper-side-left-side-body {
+    width: 242px;
+}
+.main-menu__footer-upper-side-right-side {
+    display: flex;
+}
+.main-menu__footer-upper-side-right-side-section {
+    margin-right: 90px;
+}
+.main-menu__footer-upper-side-right-side-section:last-child {
+    margin-right: 0;
+}
+.main-menu__footer-upper-side-right-side-section-title {
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #7f8a95;
+}
+.main-menu__footer-upper-side-right-side-section-item {
+    color: inherit;
+    display: block;
+    font-size: 15px;
+    line-height: 170%;
+}
+
+/* footer bottom side */
+
+.main-menu__footer-bottom-side {
+    margin-top: 107px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 130%;
+    color: #7f8a95;
+}
+
+.main-menu__footer-bottom-side-right-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu__footer-bottom-side-right-side > a {
+    color: inherit;
+}
+.main-menu__footer-bottom-side-right-side > a:first-child {
+    margin-right: 20px;
+}
+
+/* login */
+
+.login-dropdown img {
+    position: relative;
+    bottom: 2px;
+}
+
+.login-dropdown .dropdown-toggle::after {
+    position: relative;
+    top: 8px;
+    right: 2px;
+
+    border: none;
+    content: url("./assets/img/svg/login-logo/toggle-icon.svg");
+}
+
+.login-form__body {
+    padding: 80px 54px 64px;
+    font-family: SF Pro Display;
+    background: #f5f6fa;
+}
+
+.login-form__body-header {
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-form__company-subtitle {
+    font-weight: 300;
+    font-size: 8.375px;
+    line-height: 110%;
+
+    color: #7f8a95;
+    opacity: 0.6;
+}
+
+.login-form__title {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 100%;
+
+    color: #7f8a95;
+}
+
+.login-form__buttons {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-form__buttons > button {
+    background: #577bec;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 14px 52px;
+    border: none;
+    color: white;
+}
+
+.login-form__buttons > a {
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #577bec;
+}
+.login-form__buttons > a:hover {
+    text-decoration: none;
+}
+
+.login-form__login-warning {
+    width: 278px;
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 120%;
+    color: #a1a1a6;
+}
+
+.login-form__body-footer {
+    margin-top: 103px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form__body-footer > a {
+    font-size: 14px;
+    line-height: 115%;
+
+    color: #7a7a80;
+}
+
+@media (max-width: 1250px) {
+    .main-menu__organization-list {
+        width: 600px;
+    }
+    .main-menu__organization-item-wrapper {
+        margin-bottom: 10px;
+    }
+    .main-menu__features {
+        width: 580px;
+        flex-direction: column;
+    }
+    .main-menu__features-login-banner {
+        padding-right: 0;
+    }
+    .main-menu__features-login-banner-subtitle {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .main-menu__features-login-banner-title {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .main-menu__features-login-banner-btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .main-menu__features-card-list {
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .main-menu__features-card-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .main-menu__bid-panel {
+        width: 580px;
+    }
+
+    .main-menu__bid-panel-card-wrapper {
+        margin-left: 0;
+    }
+
+    .main-menu__bid-panel-container {
+        flex-direction: column;
+    }
+
+    .main-menu__bid-panel-card-wrapper {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .main-menu__bid-panel-card-body {
+        text-align: center;
+    }
+
+    .main-btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main-menu__tariff-panel-card-list {
+        width: 580px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-menu__tariff-panel-card-wrapper {
+        margin-top: 80px;
+    }
+    .main-menu__tariff-panel-card-wrapper:nth-child(1) {
+        margin-top: 20px;
+    }
+    .main-menu__tariff-panel-card-wrapper:nth-child(2) {
+        margin-top: 80px;
+    }
+    footer {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-menu__footer-upper-side {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .main-menu__footer-upper-side-left-side-body {
+        width: 178px;
+    }
+    .main-menu__footer-upper-side-right-side {
+        flex-direction: column;
+    }
+
+    .main-menu__footer-upper-side-right-side-section {
+        margin-right: 0;
+        margin-top: 40px;
+    }
+    .main-menu__footer-bottom-side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-menu__footer-bottom-side-right-side {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-menu__footer-bottom-side-right-side > a {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-menu__organization-list {
+        width: 400px;
+    }
+    .main-menu__organization-item-wrapper {
+        margin-bottom: 40px;
+    }
+    .main-menu__features {
+        /* padding-top: 40px; */
+        width: 370px;
+        flex-direction: column;
+    }
+    .main-menu__features-login-banner-title {
+        width: auto;
+        font-size: 30px;
+    }
+
+    .main-menu__bid-panel {
+        width: 370px;
+    }
+
+    .main-menu__bid-panel-card-paper-plane-logo {
+        display: none;
+    }
+    .main-menu__bid-panel-card-first-logo {
+        display: none;
+    }
+    .main-menu__bid-panel-card-second-logo {
+        display: none;
+    }
+    .main-menu__bid-panel-card-wrapper {
+        margin-top: 20px;
+    }
+
+    .main-menu__tariff-panel-card-list {
+        width: 370px;
+    }
+}
+@media (max-width: 480px) {
+    .login-form__title{
+        text-align: center;
+    }
+    .login-form__body-header {
+        flex-direction: column;
+    }
+    .login-form__body-header > div:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .login-form__body-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-form__body-footer > a:nth-child(2) {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 415px) {
+    .main-menu__organization-list {
+        width: 200px;
+    }
+    .login-form__buttons {
+        flex-direction: column;
+    }
+    .login-form__buttons > a {
+        margin-top: 20px;
+    }
+}
